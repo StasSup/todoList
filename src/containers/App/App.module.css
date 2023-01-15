@@ -1,0 +1,11 @@
+.root {
+  background: #111111;
+  width: 100%;
+  height: 100vh;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+}
