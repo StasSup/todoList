@@ -25,11 +25,11 @@ function store(): StoreType {
   }, [newsMarqueeIsEnabled]);
 
   useQuery<TaskGroup[]>('todoList', {
-    queryFn: () => TaskService.getAll(),
+    queryFn: () => TaskService.getTaskList(),
     onSuccess: (data) => setTaskList(data),
   });
 
-  const { data: news, refetch } = useQuery('news', () => NewsService.getAll(), {
+  const { data: news, refetch } = useQuery('news', () => NewsService.getNews(), {
     select: ((data) => data.articles),
     enabled: false,
   });

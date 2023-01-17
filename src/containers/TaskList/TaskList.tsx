@@ -1,11 +1,11 @@
 import styles from './TaskList.module.css';
 import CurrentTasks from './containers/CurrentTasks/CurrentTasks';
 import { useStore } from '../../hooks/useStore';
-import TaskGroup from './components/TaskGroup/TaskGroup';
+import TaskGroup from './containers/TaskGroup/TaskGroup';
 import { dateFormatter } from '../../helpers/dateFormatter';
 import { IconButton, Popover } from '@mui/material';
 import SettingsIcon from '@mui/icons-material/Settings';
-import { RefObject, useRef, useState } from 'react';
+import { useState } from 'react';
 import Switcher from '../../components/Switcher/Switcher';
 
 const todosIsCurrent = (date: Date): boolean => {

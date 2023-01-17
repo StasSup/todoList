@@ -1,9 +1,9 @@
 import { FC, useCallback, useMemo, useState } from 'react';
 import styles from './TaskGroup.module.scss';
-import Task from '../Task/Task';
+import Task from '../../components/Task/Task';
 import cn from 'classnames';
 import { useStore } from '../../../../hooks/useStore';
-import TaskGroupStub from '../TaskGroupStub/TaskGroupStub';
+import TaskGroupStub from '../../components/TaskGroupStub/TaskGroupStub';
 import { dateFormatter } from '../../../../helpers/dateFormatter';
 import ExpandCircleDownIcon from '@mui/icons-material/ExpandCircleDown';
 import { IconButton } from '@mui/material';
